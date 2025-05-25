@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 
+#git repo git repo: https://github.com/Peticaru/credit-score-prediction
+
+
 def generate_credit_score_dataset(num_samples=1000):
     # np.random.seed(42)  # For reproducibility
     age = np.random.randint(18, 71, num_samples)           

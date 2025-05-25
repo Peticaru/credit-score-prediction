@@ -4,6 +4,8 @@
 *Autor:* Peticaru Alexandru
 *Grupa:* 312CA
 
+git repo: https://github.com/Peticaru/credit-score-prediction
+
 ---
 
 ## Descriere
