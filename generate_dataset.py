@@ -17,12 +17,12 @@ def generate_credit_score_dataset(num_samples=1000):
 
     credit_score = np.zeros(num_samples, dtype=int)
     score = 300
-    score += (income / 150000) *200
+    score += (income / 150000) * 300
     score += (loan_amount/ 50000) * 100
-    score -= (period / 60) * 50
-    score += (4 - dependents) * 20
-    score += np.where(credit_history == "Good", 120, np.where(credit_history == "Average", 60, -40))
-    score += np.where(marital_status == "Married", 50, np.where(marital_status == "Single", 20, -20))
+    score -= (period / 60) * 70
+    score += (4 - dependents) * 30
+    score += np.where(credit_history == "Good", 40, np.where(credit_history == "Average", 30, -20))
+    score += np.where(marital_status == "Married", 30, np.where(marital_status == "Single", 10, -10))
     score = np.clip(score, 300, 850)  # Ensure scores are within the range of 300 to 850
     credit_score = score.astype(int)
 
@@ -30,7 +30,7 @@ def generate_credit_score_dataset(num_samples=1000):
         "Age": age,
         "Dependents": dependents,
         "Income": income,
-        
+
         "LoanAmount": loan_amount,
         "CurrentBalance": current_balance,
         "PreviousBalance": previous_balance,
@@ -51,5 +51,5 @@ def generate_credit_score_dataset(num_samples=1000):
 
 # Generate and save the dataset
 dataset = generate_credit_score_dataset()
-dataset.to_csv("credit_score_dataset.csv", index=False)
+dataset.to_csv("./date/credit_score_dataset.csv", index=False)
 print("Dataset generated and saved as 'credit_score_dataset.csv'")
