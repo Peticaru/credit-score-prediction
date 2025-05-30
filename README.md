@@ -134,7 +134,7 @@ MaritalStatusScore = 30 pentru Married, 10 pentru Single, –10 pentru Divorced
 
 ## Distributie date
 
-![Grafic Scatter](./date/grafice/histograms.png)
+![Grafic Scatter](./date/grafice/histograms2.png)
 ![Grafic Scatter](./date/grafice/da.png)
 
 ## Heatmap
