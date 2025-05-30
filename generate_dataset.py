@@ -11,10 +11,10 @@ def generate_credit_score_dataset(num_samples=1000):
     period = np.random.choice([12, 24, 36, 48, 60], num_samples)
 
     
-    income = np.random.normal(20000, 150000, num_samples)        
-    loan_amount = np.random.normal(1000, 50000, num_samples)      
-    current_balance = np.random.normal(0, 25000, num_samples)    
-    previous_balance = np.random.normal(0, 30000, num_samples)  
+    income = np.random.normal(200000, 15000, num_samples)        
+    loan_amount = np.random.normal(10000, 2000, num_samples)      
+    current_balance = np.random.normal(100000, 25000, num_samples)    
+    previous_balance = np.random.normal(80000, 30000, num_samples)  
 
     credit_history = np.random.choice(['Good', 'Bad', 'Average'], num_samples)
     marital_status = np.random.choice(['Single', 'Married', 'Divorced'], num_samples)
@@ -57,3 +57,11 @@ def generate_credit_score_dataset(num_samples=1000):
 dataset = generate_credit_score_dataset()
 dataset.to_csv("./date/credit_score_dataset.csv", index=False)
 print("Dataset generated and saved as 'credit_score_dataset.csv'")
+
+from matplotlib import pyplot as plt
+
+dataset.hist(bins=50, figsize=(20, 15), color='blue', edgecolor='black')
+plt.suptitle('Distributia valorilor')
+plt.savefig('./date/graficetrain_histogram.png')
+plt.close()
+
