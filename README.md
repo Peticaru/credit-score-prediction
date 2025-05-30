@@ -14,6 +14,8 @@ Am generat un dataset sintetic pentru o problemă de *regresie* – predictia un
 
 Setul de date conține *1000 de instanțe* și *8 coloane de input*, din care 6 sunt numerice. Coloana țintă este CreditScore, o valoare între 300 și 850.
 
+Pentru valorile nule, numerice, am inlocuit cu valoare medie, iar pentru celalalte am inlocuit cu cea mai frecventa valoare
+
 ---
 
 ## Descrierea coloanelor
@@ -80,4 +82,3 @@ Modelul de bază recomandat pentru regresie este LinearRegression, de asemenea, 
 ## Random Forrest
 
 ![Grafic Scatter](./date/grafice/rf.png)
-
