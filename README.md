@@ -12,7 +12,9 @@ git repo: https://github.com/Peticaru/credit-score-prediction
 
 Am generat un dataset sintetic pentru o problemă de *regresie* – predictia unui **scor de credit (CreditScore)** pe baza unor caracteristici personale.
 
-Setul de date conține *1000 de instanțe* și *8 coloane de input*, din care 6 sunt numerice. Coloana țintă este CreditScore, o valoare între 300 și 850.
+Setul de date conține *1000 de instanțe* și *8 coloane de input*, din care 6 sunt numerice. Coloana țintă este CreditScore, o valoare între 300 și 850. 
+
+Pentru valorile nule, numerice, am inlocuit cu valoare medie, iar pentru celalalte am inlocuit cu cea mai frecventa valoare
 
 ---
 
